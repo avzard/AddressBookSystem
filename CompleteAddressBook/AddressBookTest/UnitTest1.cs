@@ -30,15 +30,23 @@ namespace AddressBookTest
             AddressBookModel addmodel = new AddressBookModel();
 
             AddressBookModel editModel = new AddressBookModel();
-            editModel.First_Name = "Balu";
-            editModel.Last_Name = "Nagireddy";
-            editModel.City = "Hyderbad";
-            editModel.State = "Telengana";
-            editModel.Email = "balureddy@gmail.com";
+            editModel.First_Name = "Abhishek";
+            editModel.Last_Name = "Jadhav";
+            editModel.City = "Thane";
+            editModel.State = "Maharashtra";
+            editModel.Email = "abhishek.dpk.jdv@gmail.com";
             editModel.BookName = "address001";
             editModel.AddressbookType = "office";
             bool result = addrepo.EditContactUsingFirstName(editModel);
             Assert.AreEqual(expected, result);
+        }
+        [TestMethod]
+        public void GivenContactInsertDate_ThenReturnTotalEmployeeBetweenRange()
+        {
+            AddressBookRepo addrepo = new AddressBookRepo();
+            int count = addrepo.getContactDataWithGivenDate();
+            int expected = 10;
+            Assert.AreEqual(expected, count);
         }
     }
 }
