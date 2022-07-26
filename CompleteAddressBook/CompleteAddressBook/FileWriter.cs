@@ -10,9 +10,9 @@ namespace CompleteAddressBook
 {
     class FileWriter
     {
-        public static string path = @"C:\Users\admin\OneDrive\Desktop\CompleteAddressBook\AddressBookSystem\CompleteAddressBook\CompleteAddressBook\AddressBookFile.txt";
-        public static string csvPath = @"C:\Users\admin\OneDrive\Desktop\CompleteAddressBook\AddressBookSystem\CompleteAddressBook\CompleteAddressBook\CSV_AddressBook.csv";
-        public static string jsonPath = @"C:\Users\admin\OneDrive\Desktop\CompleteAddressBook\AddressBookSystem\CompleteAddressBook\CompleteAddressBook\JSON_AddressBook.json";
+        public static string path = @"C:\Users\admin\OneDrive\Desktop\CompleteAddressBook\AddressBookSystem\CompleteAddressBook\CompleteAddressBook\Files\AddressBookFile.txt";
+        public static string csvPath = @"C:\Users\admin\OneDrive\Desktop\CompleteAddressBook\AddressBookSystem\CompleteAddressBook\CompleteAddressBook\Files\CSV_AddressBook.csv";
+        public static string jsonPath = @"C:\Users\admin\OneDrive\Desktop\CompleteAddressBook\AddressBookSystem\CompleteAddressBook\CompleteAddressBook\Files\JSON_AddressBook.json";
         public static void WriteUsingStreamWriter(List<ContactPerson> data)
         {
 
